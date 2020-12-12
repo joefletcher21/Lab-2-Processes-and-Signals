@@ -1,5 +1,5 @@
-signals: signal.c
-	gcc signal.c -o signalab 
+signal: signal.c
+	gcc -o signal signal.c signalab -I.
 	
-clean:
-	-rm main
+timer: timer.c
+	gcc -o timer timer.c -I.
